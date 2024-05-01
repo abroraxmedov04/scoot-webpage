@@ -1,0 +1,54 @@
+@use "../abstract/variable" as var;
+
+@mixin main-button($padding-block, $padding-inline, $font-size) {
+  background-color: var.$main-yellow;
+  border: 3px solid var.$main-yellow;
+  padding-block: $padding-block;
+  padding-inline: $padding-inline;
+  color: var.$main-white;
+  font-size: $font-size;
+  cursor: pointer;
+  transition: ease 0.3s;
+
+  &:hover {
+    background-color: var.$main-white;
+    color: var.$main-yellow;
+  }
+}
+
+@mixin flex-box($flex, $flex-direction, $alignment, $justify-content, $gap) {
+  display: $flex;
+  flex-direction: $flex-direction;
+  align-items: $alignment;
+  justify-content: $justify-content;
+  gap: $gap;
+}
+
+@mixin list-unstyled {
+  list-style-type: none;
+  padding-left: 0;
+  margin-block: 0;
+}
+
+@mixin links($link-color) {
+  text-decoration: none;
+  color: $link-color;
+}
+
+@mixin text-style($family, $weight, $font-size, $line-height, $alignmet) {
+  font-family: $family;
+  font-weight: $weight;
+  font-size: $font-size;
+  line-height: $line-height;
+  text-align: $alignmet;
+}
+
+@mixin margin-block {
+  margin-block: 40px;
+}
+
+@mixin main-media($min-width) {
+  @media only screen and (min-width: $min-width) {
+    @content;
+  }
+}

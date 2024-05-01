@@ -1,0 +1,28 @@
+@use "../abstract/variable" as var;
+@use "../abstract/mixins" as mix;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var.$main-font;
+  background-color: var.$main-white;
+}
+
+img {
+  display: block;
+}
+
+ul {
+  @include mix.list-unstyled;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
