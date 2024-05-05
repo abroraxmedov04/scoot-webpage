@@ -14,6 +14,7 @@ elMenuBtn.addEventListener("click", menuBtn);
 document.addEventListener("click", (e) => {
   if (
     !e.target.matches(".howitwporks__header") &&
+    !e.target.matches(".faqs-btn") &&
     !e.target.matches(".faqs-btn")
   )
     return;
