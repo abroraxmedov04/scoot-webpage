@@ -1,0 +1,104 @@
+@use "../abstract/variable" as var;
+@use "../abstract/mixins" as mix;
+
+.download {
+  position: relative;
+  background-color: var.$main-dark-navy;
+  background-image: url("../../assets/image/about-dw-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @include mix.main-media(768px) {
+    background-image: url("../../assets/image/about-download-bg-tablet.png");
+  }
+
+  @include mix.main-media(992px) {
+    background-image: url("../../assets/image/about-dw-bg-desktop.png");
+  }
+  &__inner {
+    padding-block: 88px;
+
+    @include mix.main-media(768px) {
+      padding-block: 62px;
+    }
+
+    @include mix.main-media(992px) {
+      padding-block: 102px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    font-family: var.$secondary-font;
+    color: var.$main-white;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    margin-bottom: 40px;
+
+    @include mix.main-media(768px) {
+      display: block;
+      font-size: 48px;
+      line-height: 48px;
+      max-width: 457px;
+      width: 100%;
+      margin-inline: auto;
+    }
+
+    @include mix.main-media(992px) {
+      font-size: 48px;
+      line-height: 48px;
+      text-align: start;
+      margin: 0;
+    }
+  }
+
+  &__links {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding-block: 6px;
+    padding-inline: 12px;
+    background-color: #e5ecf4;
+    border-radius: 5px;
+
+    i {
+      display: block;
+      font-size: 20px;
+      color: var.$main-dark-navy;
+    }
+  }
+
+  &__btn-texts {
+    display: flex;
+    flex-direction: column;
+
+    small {
+      color: var.$main-dark-navy;
+      font-family: var.$secondary-font;
+      font-weight: 700;
+      font-size: 9px;
+    }
+
+    p {
+      padding: 0;
+      margin: 0;
+      font-family: var.$secondary-font;
+      font-weight: 700;
+      color: var.$main-dark-navy;
+    }
+  }
+}
