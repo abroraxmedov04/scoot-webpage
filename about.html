@@ -1,325 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./css/main.css" />
-    <title>About page</title>
-  </head>
 
-  <body>
-    <header class="site-header">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <title>About page</title>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="site-header__inner">
+        <button class="site-header__btn js-menu-btn"></button>
+        <a class="site-header__logo" href="index.html">
+          <img class="site-header__logo" src="./assets/image/logo.png" alt="scoot logo" />
+        </a>
+      </div>
+      <div class="site-header__wrapper wrapper">
+        <nav class="site-header__nav sitenav">
+          <a href="index.html">
+            <img class="sitenav__logo" src="./assets/image/logo.png" alt="logo" />
+          </a>
+          <ul class="sitenav__links">
+            <li class="sitenav__itam">
+              <a class="sitenav__link" href="./about.html">About</a>
+            </li>
+
+            <li class="sitenav__itam">
+              <a class="sitenav__link" href="./about.html">Location</a>
+            </li>
+
+            <li class="sitenav__itam">
+              <a class="sitenav__link" href="./careers.html">Careers</a>
+            </li>
+          </ul>
+          <a class="sitenav__btn-link" href="#">Get Scootin</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
       <div class="container">
-        <div class="site-header__inner">
-          <button class="site-header__btn js-menu-btn"></button>
-          <a class="site-header__logo" href="index.html">
-            <img
-              class="site-header__logo"
-              src="./assets/image/logo.png"
-              alt="scoot logo"
-            />
+        <div class="hero__inner">
+          <div class="hero__title">About</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="opportunity">
+      <div class="container">
+        <div class="opportunity__inner">
+          <div class="opportunity__card">
+            <img src="./assets/image/about-opportunity-img-1.png" alt="opportunity-card-1" />
+            <div class="opportubnity__card-details">
+              <h2>Mobility for the digital era</h2>
+              <p>
+                Getting around should be simple (and even fun!) for everyone.
+                We embrace technology to provide low cost, smart access to
+                scooters at your fingertips.
+              </p>
+            </div>
+          </div>
+
+          <div class="opportunity__card">
+            <img src="./assets/image/about-opportunity-img-2.png" alt="opportunity-card-1" />
+
+            <div class="opportubnity__card-details">
+              <h2>Better urban living</h2>
+              <p>
+                We’re helping connect cities and bring people closer together.
+                Our scooters are also fully-electric and we offset the minimal
+                carbon footprint for each ride.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-our">
+      <div class="container">
+        <h2 class="about-our__title">Our values</h2>
+        <div class="about-our__inner">
+          <div class="about-our__card">
+            <img src="./assets/image/about-value-1.png" alt="card 1" />
+            <strong>Our tech</strong>
+            <p>
+              We’re using cutting edge technology to drive accessible urban
+              transportation forward. Our fully electric scooters are a joy to
+              ride!
+            </p>
+          </div>
+          <div class="about-our__card">
+            <img src="./assets/image/about-value-2.png" alt="card 2" />
+            <strong>Our integrity</strong>
+            <p>
+              We are fully committed to deliver a great yet safe, sustainable
+              micro-mobility experience in every city we serve.
+            </p>
+          </div>
+          <div class="about-our__card">
+            <img src="./assets/image/about-value-3.png" alt="card 3" />
+            <strong>Our community</strong>
+            <p>
+              We uses local workforce with neighborhood organizations to
+              greatly improve the overall growth and improve urban living.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- new FAQS -->
+
+    <section class="faqs">
+      <div class="container">
+        <h2 class="faqs__title">FAQs</h2>
+        <div class="faqs__inner">
+          <div class="howitworks">
+            <h3 class="howitworks__title">How it works</h3>
+            <div class="howitworks__inner">
+              <div class="howitworks__card">
+                <div class="howitwporks__header">
+                  <span> How do I download the app? </span>
+                  <button class="faqs-btn"></button>
+                </div>
+
+                <div class="howitworks__body">
+                  <p>
+                    To download the Scoot app, you can search “Scoot” in both
+                    the App and Google Play stores. An even simpler way to do
+                    it would be to click the relevant link at the bottom of
+                    this page and you’ll be re-directed to the correct page.
+                  </p>
+                </div>
+              </div>
+
+              <div class="howitworks__card">
+                <div class="howitwporks__header">
+                  <span>Can I find a nearby Scoots?</span>
+                  <button class="faqs-btn"></button>
+                </div>
+
+                <div class="howitworks__body">
+                  <p>
+                    To download the Scoot app, you can search “Scoot” in both
+                    the App and Google Play stores. An even simpler way to do
+                    it would be to click the relevant link at the bottom of
+                    this page and you’ll be re-directed to the correct page.
+                  </p>
+                </div>
+              </div>
+
+              <div class="howitworks__card">
+                <div class="howitwporks__header">
+                  <span>Do I need a license to ride?</span>
+                  <button class="faqs-btn"></button>
+                </div>
+
+                <div class="howitworks__body">
+                  <p>
+                    To download the Scoot app, you can search “Scoot” in both
+                    the App and Google Play stores. An even simpler way to do
+                    it would be to click the relevant link at the bottom of
+                    this page and you’ll be re-directed to the correct page.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- new one -->
+
+          <div class="howitworks">
+            <h3 class="howitworks__title">Safe driving</h3>
+            <div class="howitworks__inner">
+              <div class="howitworks__card">
+                <div class="howitwporks__header">
+                  <span> Should I wear a helmet? </span>
+                  <button class="faqs-btn"></button>
+                </div>
+
+                <div class="howitworks__body">
+                  <p>
+                    Yes, please do! All cities have different laws. But we
+                    strongly strongly strongly recommend always wearing a
+                    helmet regardless of the local laws. We like you and we
+                    want you to be as safe as possible while Scooting.
+                  </p>
+                </div>
+              </div>
+
+              <div class="howitworks__card">
+                <div class="howitwporks__header">
+                  <span>How about the rules & regulations?</span>
+                  <button class="faqs-btn"></button>
+                </div>
+
+                <div class="howitworks__body">
+                  <p>
+                    Yes, please do! All cities have different laws. But we
+                    strongly strongly strongly recommend always wearing a
+                    helmet regardless of the local laws. We like you and we
+                    want you to be as safe as possible while Scooting.
+                  </p>
+                </div>
+              </div>
+
+              <div class="howitworks__card">
+                <div class="howitwporks__header">
+                  <span>What if I damage my Scoot?</span>
+                  <button class="faqs-btn"></button>
+                </div>
+
+                <div class="howitworks__body">
+                  <p>
+                    To download the Scoot app, you can search “Scoot” in both
+                    the App and Google Play stores. An even simpler way to do
+                    it would be to click the relevant link at the bottom of
+                    this page and you’ll be re-directed to the correct page.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="download">
+      <div class="container">
+        <div class="download__inner">
+          <h2 class="download__title">Sign up and Scoot off today</h2>
+          <div class="download__links">
+            <div class="download__btn" href="https://www.apple.com/store">
+              <i class="fa-brands fa-apple"></i>
+              <div class="download__btn-texts">
+                <small>Available on the</small>
+                <p>AppStore</p>
+              </div>
+            </div>
+            <div class="download__btn" href="https://play.google.com/store/games?hl=en&gl=US">
+              <i class="fa-brands fa-google-play"></i>
+              <div class="download__btn-texts">
+                <small>Get it on</small>
+                <p>GooglePlay</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__side">
+          <a href="./index.html" class="footer__logo">
+            <img src="./assets/image/about-footer-logo.png" alt="footer-logo" />
+          </a>
+
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="./about.html" class="footer__link"> About</a>
+            </li>
+            <li class="footer__item">
+              <a href="./index.html" class="footer__link"> Location</a>
+            </li>
+            <li class="footer__item">
+              <a href="./careers.html" class="footer__link">Careers</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__icons">
+          <a href="https://www.facebook.com/business/ads" class="footer__icon">
+            <i class="fa-brands fa-square-facebook"></i></a>
+          <a href="https://twitter.com/?lang=en" class="footer__icon">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+
+          <a href="https://www.instagram.com/" class="footer__icon">
+            <i class="fa-brands fa-instagram"></i>
           </a>
         </div>
-        <div class="site-header__wrapper wrapper">
-          <nav class="site-header__nav sitenav">
-            <a href="index.html">
-              <img
-                class="sitenav__logo"
-                src="./assets/image/logo.png"
-                alt="logo"
-              />
-            </a>
-            <ul class="sitenav__links">
-              <li class="sitenav__itam">
-                <a class="sitenav__link" href="./about.html">About</a>
-              </li>
-
-              <li class="sitenav__itam">
-                <a class="sitenav__link" href="./about.html">Location</a>
-              </li>
-
-              <li class="sitenav__itam">
-                <a class="sitenav__link" href="./careers.html">Careers</a>
-              </li>
-            </ul>
-            <a class="sitenav__btn-link" href="#">Get Scootin</a>
-          </nav>
-        </div>
       </div>
-    </header>
+    </div>
+  </footer>
+  <script src="./js/script.js"></script>
+</body>
 
-    <main>
-      <section class="hero">
-        <div class="container">
-          <div class="hero__inner">
-            <div class="hero__title">About</div>
-          </div>
-        </div>
-      </section>
-
-      <section class="opportunity">
-        <div class="container">
-          <div class="opportunity__inner">
-            <div class="opportunity__card">
-              <img
-                src="./assets/image/about-opportunity-img-1.png"
-                alt="opportunity-card-1"
-              />
-              <div class="opportubnity__card-details">
-                <h2>Mobility for the digital era</h2>
-                <p>
-                  Getting around should be simple (and even fun!) for everyone.
-                  We embrace technology to provide low cost, smart access to
-                  scooters at your fingertips.
-                </p>
-              </div>
-            </div>
-
-            <div class="opportunity__card">
-              <img
-                src="./assets/image/about-opportunity-img-2.png"
-                alt="opportunity-card-1"
-              />
-
-              <div class="opportubnity__card-details">
-                <h2>Better urban living</h2>
-                <p>
-                  We’re helping connect cities and bring people closer together.
-                  Our scooters are also fully-electric and we offset the minimal
-                  carbon footprint for each ride.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="about-our">
-        <div class="container">
-          <h2 class="about-our__title">Our values</h2>
-          <div class="about-our__inner">
-            <div class="about-our__card">
-              <img src="./assets/image/about-value-1.png" alt="card 1" />
-              <strong>Our tech</strong>
-              <p>
-                We’re using cutting edge technology to drive accessible urban
-                transportation forward. Our fully electric scooters are a joy to
-                ride!
-              </p>
-            </div>
-            <div class="about-our__card">
-              <img src="./assets/image/about-value-2.png" alt="card 2" />
-              <strong>Our integrity</strong>
-              <p>
-                We are fully committed to deliver a great yet safe, sustainable
-                micro-mobility experience in every city we serve.
-              </p>
-            </div>
-            <div class="about-our__card">
-              <img src="./assets/image/about-value-3.png" alt="card 3" />
-              <strong>Our community</strong>
-              <p>
-                We uses local workforce with neighborhood organizations to
-                greatly improve the overall growth and improve urban living.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- new FAQS -->
-
-      <section class="faqs">
-        <div class="container">
-          <h2 class="faqs__title">FAQs</h2>
-          <div class="faqs__inner">
-            <div class="howitworks">
-              <h3 class="howitworks__title">How it works</h3>
-              <div class="howitworks__inner">
-                <div class="howitworks__card">
-                  <div class="howitwporks__header">
-                    <span> How do I download the app? </span>
-                    <button></button>
-                  </div>
-
-                  <div class="howitworks__body">
-                    <p>
-                      To download the Scoot app, you can search “Scoot” in both
-                      the App and Google Play stores. An even simpler way to do
-                      it would be to click the relevant link at the bottom of
-                      this page and you’ll be re-directed to the correct page.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="howitworks__card">
-                  <div class="howitwporks__header">
-                    <span>Can I find a nearby Scoots?</span>
-                    <button></button>
-                  </div>
-
-                  <div class="howitworks__body">
-                    <p>
-                      To download the Scoot app, you can search “Scoot” in both
-                      the App and Google Play stores. An even simpler way to do
-                      it would be to click the relevant link at the bottom of
-                      this page and you’ll be re-directed to the correct page.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="howitworks__card">
-                  <div class="howitwporks__header">
-                    <span>Do I need a license to ride?</span>
-                    <button></button>
-                  </div>
-
-                  <div class="howitworks__body">
-                    <p>
-                      To download the Scoot app, you can search “Scoot” in both
-                      the App and Google Play stores. An even simpler way to do
-                      it would be to click the relevant link at the bottom of
-                      this page and you’ll be re-directed to the correct page.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- new one -->
-
-            <div class="howitworks">
-              <h3 class="howitworks__title">Safe driving</h3>
-              <div class="howitworks__inner">
-                <div class="howitworks__card">
-                  <div class="howitwporks__header">
-                    <span> Should I wear a helmet? </span>
-                    <button></button>
-                  </div>
-
-                  <div class="howitworks__body">
-                    <p>
-                      Yes, please do! All cities have different laws. But we
-                      strongly strongly strongly recommend always wearing a
-                      helmet regardless of the local laws. We like you and we
-                      want you to be as safe as possible while Scooting.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="howitworks__card">
-                  <div class="howitwporks__header">
-                    <span>How about the rules & regulations?</span>
-                    <button></button>
-                  </div>
-
-                  <div class="howitworks__body">
-                    <p>
-                      Yes, please do! All cities have different laws. But we
-                      strongly strongly strongly recommend always wearing a
-                      helmet regardless of the local laws. We like you and we
-                      want you to be as safe as possible while Scooting.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="howitworks__card">
-                  <div class="howitwporks__header">
-                    <span>What if I damage my Scoot?</span>
-                    <button></button>
-                  </div>
-
-                  <div class="howitworks__body">
-                    <p>
-                      To download the Scoot app, you can search “Scoot” in both
-                      the App and Google Play stores. An even simpler way to do
-                      it would be to click the relevant link at the bottom of
-                      this page and you’ll be re-directed to the correct page.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="download">
-        <div class="container">
-          <div class="download__inner">
-            <h2 class="download__title">Sign up and Scoot off today</h2>
-            <div class="download__links">
-              <div class="download__btn" href="https://www.apple.com/store">
-                <i class="fa-brands fa-apple"></i>
-                <div class="download__btn-texts">
-                  <small>Available on the</small>
-                  <p>AppStore</p>
-                </div>
-              </div>
-              <div
-                class="download__btn"
-                href="https://play.google.com/store/games?hl=en&gl=US"
-              >
-                <i class="fa-brands fa-google-play"></i>
-                <div class="download__btn-texts">
-                  <small>Get it on</small>
-                  <p>GooglePlay</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="container">
-        <div class="footer__inner">
-          <div class="footer__side">
-            <a href="./index.html" class="footer__logo">
-              <img
-                src="./assets/image/about-footer-logo.png"
-                alt="footer-logo"
-              />
-            </a>
-
-            <ul class="footer__list">
-              <li class="footer__item">
-                <a href="./about.html" class="footer__link"> About</a>
-              </li>
-              <li class="footer__item">
-                <a href="./index.html" class="footer__link"> Location</a>
-              </li>
-              <li class="footer__item">
-                <a href="./careers.html" class="footer__link">Careers</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="footer__icons">
-            <a
-              href="https://www.facebook.com/business/ads"
-              class="footer__icon"
-            >
-              <i class="fa-brands fa-square-facebook"></i
-            ></a>
-            <a href="https://twitter.com/?lang=en" class="footer__icon">
-              <i class="fa-brands fa-twitter"></i>
-            </a>
-
-            <a href="https://www.instagram.com/" class="footer__icon">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <script src="./js/script.js"></script>
-  </body>
 </html>
