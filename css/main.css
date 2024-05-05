@@ -1024,4 +1024,116 @@ h4 {
   .site-hero__box::after {
     right: 260px;
   }
+}
+.loc-map {
+  display: none;
+}
+
+.site-location__inner {
+  margin-top: 72px;
+}
+.site-location__map {
+  width: 100%;
+}
+.site-location__wrapper {
+  margin-top: 40px;
+  text-align: center;
+}
+.site-location__box {
+  margin-top: 72px;
+}
+.site-location__box:hover {
+  cursor: pointer;
+}
+.site-location__link {
+  min-width: 200px;
+  max-width: 311px;
+  margin: 0 auto;
+  margin-bottom: 16px;
+  display: block;
+  text-decoration: none;
+  color: #495567;
+  padding-block: 22px;
+  background: rgba(252, 183, 43, 0.1490196078);
+}
+.site-location__title {
+  font-family: "SpaceMono", "Arial", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -1.4285714626px;
+}
+.site-location__paragrph {
+  margin-block: 32px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #939caa;
+}
+.site-location__btn {
+  background-color: #fcb72b;
+  border: 3px solid #fcb72b;
+  padding-block: 14px;
+  padding-inline: 39px;
+  color: #ffffff;
+  font-size: 15px;
+  cursor: pointer;
+  transition: ease 0.3s;
+}
+.site-location__btn:hover {
+  background-color: #ffffff;
+  color: #fcb72b;
+}
+
+@media only screen and (min-width: 700px) {
+  .site-location__inner {
+    margin-top: 144px;
+  }
+  .site-location__wrapper {
+    margin-top: 64px;
+  }
+  .site-location__map {
+    display: none;
+  }
+  .site-location__links {
+    display: none;
+  }
+  .site-location__title {
+    width: 457px;
+    margin: 0 auto;
+    font-size: 48px;
+    line-height: 48px;
+  }
+  .site-location__paragrph {
+    width: 573px;
+    margin: 0 auto;
+    margin-block: 32px;
+  }
+  .loc-map {
+    display: block;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .site-location__inner {
+    margin-top: 120px;
+  }
+  .site-location__wrapper {
+    margin-top: 120px;
+  }
+  .site-location__title {
+    width: 351px;
+    margin: 0;
+  }
+  .site-location__paragrph {
+    margin: 0;
+    width: 445px;
+    letter-spacing: -2;
+  }
+  .site-location__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 120px;
+    text-align: start;
+  }
 }/*# sourceMappingURL=main.css.map */
