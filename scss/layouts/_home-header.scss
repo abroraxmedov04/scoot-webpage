@@ -1,0 +1,169 @@
+@use "../abstract/variable" as var;
+@use "../abstract/mixins" as mix;
+
+.unscrol {
+  overflow: hidden;
+}
+
+.menu-open .sitenav {
+  transform: translateX(0);
+  visibility: visible;
+}
+
+.menu-open .site-header__btn {
+  background-image: url("../../assets/image/menu-close.png");
+}
+
+.bg-color {
+  background-color: #000000cd;
+}
+
+.site-header {
+  &__inner {
+    display: flex;
+    align-items: center;
+    padding-block: 22px;
+  }
+
+  &__btn {
+    width: 20px;
+    height: 16px;
+    background-image: url("../../assets/image/hamburger.png");
+    background-repeat: no-repeat;
+    border: none;
+    background-color: transparent;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__logo {
+    width: 75.5px;
+    margin: 0 auto;
+  }
+
+  &__wrapper {
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+  }
+}
+
+.sitenav {
+  width: 80%;
+  height: 100vh;
+  padding-top: 64px;
+  padding-inline: 20px;
+  background-color: var.$main-dark-grey-color;
+  transition: all 0.3s ease;
+  transform: translateX(-100%);
+  visibility: hidden;
+
+  &__itam:not(:last-child) {
+    margin-bottom: 24px;
+  }
+
+  &__link {
+    font-family: var.$secondary-font;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    text-decoration: none;
+    color: var.$main-light-grey;
+  }
+
+  &__btn-link {
+    @include mix.main-button(14px, 39px, 15px);
+    bottom: 80px;
+    position: absolute;
+    font-family: var.$secondary-font;
+    font-weight: 700;
+    text-decoration: none;
+    border: 3px solid var.$main-yellow;
+  }
+
+  &__logo {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  .site-header {
+    &__btn {
+      margin-left: 10px;
+    }
+  }
+  .sitenav {
+    width: 72%;
+    padding-inline: 32px;
+
+    &__btn-link {
+      line-height: 25px;
+    }
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .site-header {
+    &__inner {
+      padding: 0;
+    }
+
+    &__btn {
+      display: none;
+      margin-left: 0;
+    }
+
+    &__logo {
+      margin: 0;
+    }
+
+    &__wrapper {
+      position: static;
+      height: auto;
+    }
+
+    &__box {
+      @include mix.flex-box(flex, null, center, space-betwen, null);
+    }
+
+    &__logo {
+      display: none;
+    }
+  }
+
+  .sitenav {
+    @include mix.flex-box(flex, null, center, space-between, null);
+    width: 100%;
+    height: auto;
+    transform: translateX(0);
+    visibility: visible;
+    padding: 0;
+    padding-block: 34px;
+    background-color: transparent;
+
+    &__links {
+      @include mix.flex-box(flex, null, center, null, 32px);
+      position: absolute;
+      left: 164px;
+    }
+
+    &__link {
+      color: var.$main-dim-grey;
+    }
+
+    &__itam:not(:last-child) {
+      margin: 0;
+    }
+
+    &__btn-link {
+      position: static;
+    }
+
+    &__logo {
+      display: block;
+    }
+  }
+}
