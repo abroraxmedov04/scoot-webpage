@@ -1,0 +1,111 @@
+@use "../abstract/variable" as var;
+@use "../abstract/mixins" as mix;
+
+.faqs__title {
+  text-align: center;
+  margin-bottom: 48px;
+  font-weight: 700;
+  font-family: var.$secondary-font;
+  font-size: 32px;
+  line-height: 32px;
+  color: var.$main-dark-navy;
+
+  @include mix.main-media(768px) {
+    font-size: 48px;
+    line-height: 48px;
+    margin-bottom: 64px;
+  }
+}
+
+.howitworks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 48px;
+
+  @include mix.main-media(992px) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 64px;
+  }
+}
+
+.howitworks__title {
+  font-family: var.$secondary-font;
+  margin-bottom: 32px;
+  color: var.$main-dark-navy;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+
+  @include mix.main-media(768px) {
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+
+.howitworks__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @include mix.main-media(992px) {
+    max-width: 730px;
+    width: 100%;
+  }
+}
+
+.howitworks__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: ease 0.3s;
+}
+
+.howitwporks__header {
+  padding-block: 32px;
+  padding-inline: 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f2f5f9;
+  width: 100%;
+  transition: ease 0.3s;
+
+  &:hover {
+    background-color: #fff4df;
+  }
+
+  span {
+    font-family: var.$secondary-font;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    color: var.$main-dark-navy;
+  }
+
+  button {
+    background-image: url("../../assets/image/about-faqs-icon-top.png");
+    width: 16px;
+    height: 16px;
+    background-position: center;
+    padding: 10px;
+    background-repeat: no-repeat;
+    border: transparent;
+    background-color: transparent;
+  }
+}
+
+.howitworks__body {
+  padding-bottom: 32px;
+  padding-inline: 28px;
+  background-color: #f2f5f9;
+  display: none;
+
+  p {
+    margin: 0;
+    color: var.$main-dark-navy;
+    font-size: 15px;
+  }
+}

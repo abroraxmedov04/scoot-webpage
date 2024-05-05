@@ -26,3 +26,17 @@ h3,
 h4 {
   margin: 0;
 }
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var.$main-yellow;
+  border-radius: 6px;
+  height: 30px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var.$main-header-panel-color;
+}

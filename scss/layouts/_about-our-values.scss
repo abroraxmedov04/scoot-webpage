@@ -1,0 +1,57 @@
+@use "../abstract/variable" as var;
+@use "../abstract/mixins" as mix;
+
+.about-our {
+  padding-bottom: 145px;
+  &__title {
+    font-family: var.$secondary-font;
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 700;
+    text-align: center;
+    color: var.$main-dark-navy;
+    margin-bottom: 64px;
+  }
+  &__inner {
+    @include mix.flex-box(flex, column, center, center, 56px);
+
+    @include mix.main-media(992px) {
+      flex-direction: row;
+      gap: 0;
+      justify-content: space-between;
+    }
+  }
+
+  &__card {
+    position: relative;
+    @include mix.flex-box(flex, column, center, center, null);
+    text-align: center;
+
+    @include mix.main-media(768px) {
+      max-width: 457px;
+      width: 100%;
+    }
+
+    @include mix.main-media(992px) {
+      max-width: 350px;
+      width: 100%;
+    }
+
+    strong {
+      margin-top: 16px;
+      margin-bottom: 27px;
+      font-family: var.$secondary-font;
+      color: var.$main-dark-navy;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+    }
+
+    p {
+      margin-block: 0;
+      font-size: 15px;
+      line-height: 25px;
+      color: var.$main-dim-grey;
+    }
+  }
+}
