@@ -389,7 +389,6 @@
   }
 
   .wrapper-monay {
-
     &::before {
       content: "";
       width: 100px;
@@ -555,7 +554,7 @@
     &::after {
       bottom: 0;
     }
-    
+
     &::before {
       max-width: 400px;
       // height: 100px;
@@ -571,8 +570,7 @@
     }
   }
 
-    .wrapper-monay {
-
+  .wrapper-monay {
     &::before {
       content: "";
       top: 43%;
