@@ -2,7 +2,7 @@
 @use "../abstract/mixins" as mix;
 
 .footer {
-  background-color: var.$main-header-panel-color;
+  background-color: #333a44;
 
   &__inner {
     padding-block: 64px;
